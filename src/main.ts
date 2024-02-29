@@ -21,6 +21,6 @@ bootstrapApplication(AppComponent, {
     provideRouter(routes), 
     importProvidersFrom(provideFirebaseApp(() => initializeApp({"projectId":"phototag-dcf53","appId":"1:1088104973620:web:0973f36a7fab10c9739161","storageBucket":"phototag-dcf53.appspot.com","apiKey":"AIzaSyBSE5yX4DXyX2U7Fnz1DuahmAczQvFFcLk","authDomain":"phototag-dcf53.firebaseapp.com","messagingSenderId":"1088104973620"}))),
     importProvidersFrom(provideFirestore(() => getFirestore())),
-    importProvidersFrom(provideStorage(() => getStorage()))
+    importProvidersFrom(provideStorage(() => getStorage())), importProvidersFrom(provideFirebaseApp(() => initializeApp({"projectId":"phototag-dcf53","appId":"1:1088104973620:web:0973f36a7fab10c9739161","storageBucket":"phototag-dcf53.appspot.com","apiKey":"AIzaSyBSE5yX4DXyX2U7Fnz1DuahmAczQvFFcLk","authDomain":"phototag-dcf53.firebaseapp.com","messagingSenderId":"1088104973620"}))), importProvidersFrom(provideFirestore(() => getFirestore()))
   ],
 });
